@@ -5,13 +5,27 @@
 padding 50 px;
 </style>
 </head>
-<body style="background-image: linear-gradient(to bottom right,Cornsilk,BlanchedAlmond,Azure,HoneyDew,LightCyan);height: 1000px;">
-<div style="height: 900px;width: 300px;text-align: center;border-radius: 10px;position: absolute;left: 50%;transform: translate(-50%,0%);border:solid white 5px;box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">
+<body style="background-image: linear-gradient(to bottom right,Azure,LightCyan,Cornsilk,BlanchedAlmond,);height: 1000px;">
+<div style="height: 900px;width: 500px;text-align: center;border-radius: 10px;position: absolute;left: 50%;transform: translate(-50%,0%);border:solid white 5px;box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">
 <h2>Form</h2>
 <p>Fill your responses in blanks given below</p>
 <p>
-name
-roll no.
+<form action="/action_page.php">
+  <label for="Name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd"><br><br>
+  <label for="gen">Male:</label>
+  <input type="radio" id="gen" name="gen" value="m"><br>
+  <label for="gen">Female:</label>
+  <input type="radio" id="gen" name="gen" value="f"><br><br>
+  <label for="team">Design Team:</label>
+  <input type="checkbox" id="team" name="team" value="d"><br>
+  <label for="team">Web Team:</label>
+  <input type="checkbox" id="team" name="team" value="w"><br><br>
+  <input type="submit" value="Submit">
+</form>
+</form> 
 </p>
 </div>
 </body>
