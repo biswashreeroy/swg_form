@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-padding 50 px;
-</style>
-</head>
-<body style="background-image: linear-gradient(to bottom right,Azure,LightCyan,Cornsilk,BlanchedAlmond,);height: 1000px;">
-<div style="height: 900px;width: 500px;text-align: center;border-radius: 10px;position: absolute;left: 50%;transform: translate(-50%,0%);border:solid white 5px;box-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px grey;">
-<h2>Form</h2>
-<p>Fill your responses in blanks given below</p>
-<p>
-<form action="/action_page.php">
-  <label for="Name">Name:</label><br>
-  <input type="text" id="name" name="name"><br>
-  <label for="pwd">Password:</label><br>
-  <input type="password" id="pwd" name="pwd"><br><br>
- 
-    <h3>Gender<h3>
-    <label for="gen">Male:</label>
-  <input type="radio" id="gen" name="gen" value="m"><br>
-  <label for="gen">Female:</label>
-  <input type="radio" id="gen" name="gen" value="f"><br>
-       <label for="gen">Others:</label>
-  <input type="radio" id="gen" name="gen" value="o"><br><br>
+    <title>Formtik</title>
+    <link rel="stylesheet" type="text/css" href="styl.css">
+    </head>
+    <body>
+       
+        <div class="form">
+            <h1>Sign Up</h1>
+            </div>
+             <div class="main">
+                    
+        <form>
+            <div id="name">
+            <h3 class="name">Name</h3>
+            <input class="Firstname" type="text" name="Firstname"><br>
+            <label class="Firstlabel">First name</label>
+            <input class="Lastname" type="text" name="Lastname"><br>
+            <label class="Lastlabel">Last name</label>
+            </div>
+            
+            <h3 class="name">Email Id</h3>
+             <input class="email" type="email" name="email">
+            
+            <h3 class="name">Phone No.</h3>
+             <input class="number" type="text" name="phone">
+            
+            <h3 class="name">Year</h3>
+            <select class="option" name="Year">
+            <option disabled="disabled" selected="selected">--Choose Option--</option>
+               <option>1st Year</option>
+                 <option>2nd Year</option>
+                 <option>3rd Year</option>
+                 <option>4th Year</option>
+                 <option>5th Year</option>
+            </select>
+            
+            
+            
+            <h3 class="name">Gender:</h3>
+            
+            <label class="radio">
+            <input class="radio" type="radio" name="myGender"> Male</label>
+            
+            <label class="radio">
+            <input class="radio" type="radio" name="myGender"> Female </label>
+                
+                <label class="radio">
+            <input class="radio" type="radio" name="myGender">
+         Other </label>
+        
+            
+            
+            <h3 class="name">Password</h3>
+             <input class="password" type="password" name="password">
+            <button class="submit" type="submit">Sign Up</button>
+            
+           
+            
+            </form>
+        </div>
      
-    <h3>Members of the team</h3>
-  <label for="team">Associate Member:</label>
-  <input type="checkbox" id="team" name="team" value="a"><br>
-  <label for="team">Design Team:</label>
-  <input type="checkbox" id="team" name="team" value="d"><br>
-  <label for="team">Web Team:</label>
-  <input type="checkbox" id="team" name="team" value="w"><br><br>
-     
-     <h3>Year of studying</h3>
-    <label for="stud">1st Year:</label>
-  <input type="radio" id="stud" name="stud" value="1"><br>
-  <label for="stud">2nd Year:</label>
-  <input type="radio" id="stud" name="stud" value="2"><br> 
-    <label for="stud">3rd Year:</label>
-  <input type="radio" id="stud" name="stud" value="3"><br>
-  <label for="stud">4th Year:</label>
-  <input type="radio" id="stud" name="stud" value="4"><br>
-  <label for="stud">5th Year:</label>
-  <input type="radio" id="stud" name="stud" value="5"><br><br>
-     
-     
-     
-  <input type="submit" value="Submit">
-</form>
-</form> 
-</p>
-</div>
+
 </body>
 </html>
