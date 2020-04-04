@@ -1,44 +1,49 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <title>Formtik</title>
-    <link rel="stylesheet" type="text/css" href="styl.css">
+    <head>
+    <title>login</title>
+    <link rel="stylesheet" href="main.css">
+        
+    
+        
     </head>
-    <body>
-       
-        <div class="form">
-            <h1>Sign Up</h1>
-            </div>
-             <div class="main">
-                    
-        <form>
-            <div id="name">
-            <h3 class="name">Name</h3>
-            <input class="Firstname" type="text" name="Firstname"><br>
-            <label class="Firstlabel">First name</label>
-            <input class="Lastname" type="text" name="Lastname"><br>
-            <label class="Lastlabel">Last name</label>
-            </div>
+<body>
+    
+    <div class="main">
+    <div class="form">
+    <div class="buttonbox">
+        <div id="btn"></div>
+        
+        
+        
+        <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+    <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+        </div>
+        
+    
+        <form id="login" class="input-group" >
+        <input type="text" class="input-field"   placeholder="User Id" required>
             
-            <h3 class="name">Email Id</h3>
-             <input class="email" type="email" name="email">
+        <input type="text" class="input-field"  placeholder="Enter password" required>
             
-            <h3 class="name">Phone No.</h3>
-             <input class="number" type="text" name="phone">
+        <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Log In</button>
+        
+        </form>
+              
             
-            <h3 class="name">Year</h3>
-            <select class="option" name="Year">
-            <option disabled="disabled" selected="selected">--Choose Option--</option>
-               <option>1st Year</option>
-                 <option>2nd Year</option>
-                 <option>3rd Year</option>
-                 <option>4th Year</option>
-                 <option>5th Year</option>
-            </select>
+        
+           <form id="signup" class="input-group" >
+        <input type="text" class="input-field"   placeholder="Name" required>
             
+        
+               
+            <input type="text" class="input-field"   placeholder="Email Id" required>
             
+     
             
-            <h3 class="name">Gender:</h3>
+        <input type="text" class="input-field"  placeholder="Phone no." required> <br><br>
+               
+          <p class="name">Gender:</p>
             
             <label class="radio">
             <input class="radio" type="radio" name="myGender"> Male</label>
@@ -49,18 +54,57 @@
                 <label class="radio">
             <input class="radio" type="radio" name="myGender">
          Other </label>
+               
+               
+                  <input type="text" class="input-field"  placeholder=" Create User Id" required> 
+               
+            <input type="text" class="input-field"   placeholder="Create password" required>
+            <br>
+               <br>
+            <button type="submit" class="submit-btn">Sign Up</button>
         
-            
-            
-            <h3 class="name">Password</h3>
-             <input class="password" type="password" name="password">
-            <button class="submit" type="submit">Sign Up</button>
-            
-           
-            
-            </form>
-        </div>
-     
+        </form>
+              
+        
+        
+        
+    </div>
+    
+    </div>
+    
+    
+    <script>
+    var x=document.getElementById("login");
+    var y=document.getElementById("signup");
+    var z=document.getElementById("btn");
+       
+        
+        function signup(){
+            x.style.left= "-400px";
+            y.style.left=  "50px";
+            z.style.left= "110px";
+        }
+            function login(){
+            x.style.left= "50px";
+            y.style.left=  "450px";
+            z.style.left= "0px"; 
+          
+        }
+    
+    
+    
+    
+    </script>
+    
+    
+    
+    
+    </body>
 
-</body>
+
+
+
+
+
+
 </html>
